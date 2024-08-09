@@ -1,4 +1,4 @@
-package com.bunli.tts
+package com.bunli.tts.services
 
 import android.app.Service
 import android.content.Intent
@@ -6,6 +6,7 @@ import android.media.MediaPlayer
 import android.net.Uri
 import android.os.IBinder
 import android.util.Log
+import com.bunli.tts.R
 
 
 class UnboundService : Service() {

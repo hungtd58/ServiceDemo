@@ -8,108 +8,46 @@
     android:padding="10dp"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/query_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Query" />
+
+    <EditText
+        android:id="@+id/content_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Background Service"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/insert_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert" />
+
+        <Button
+            android:id="@+id/update_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update" />
+
+        <Button
+            android:id="@+id/delete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Content provider"
         android:textColor="@color/black"
         android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/start_background_services_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/start_background_services" />
-
-    <Button
-        android:id="@+id/stop_background_services_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/stop_background_services" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-        android:text="Foreground Service"
-        android:textColor="@color/black"
-        android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/start_foreground_services_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/start_foreground_services" />
-
-    <Button
-        android:id="@+id/pass_data_foreground_services_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/pass_data_foreground_services" />
-
-    <Button
-        android:id="@+id/stop_foreground_services_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/stop_foreground_services" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-        android:text="Bound Service"
-        android:textColor="@color/black"
-        android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/start_bound_services_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/start_bound_services" />
-
-    <Button
-        android:id="@+id/play_media_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Play Media" />
-
-    <Button
-        android:id="@+id/pause_media_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pause Media" />
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:paddingTop="10dp"
-        android:text="Mix Service"/>
-
-    <Button
-        android:id="@+id/start_mix_services_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Start Mix Services" />
-
-    <Button
-        android:id="@+id/play_mix_services_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Play Music" />
-
-    <Button
-        android:id="@+id/pause_mix_services_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pause Music" />
-
-    <Button
-        android:id="@+id/stop_foreground_mix_services_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Stop Foreground Mix Services" />
-
 </LinearLayout>

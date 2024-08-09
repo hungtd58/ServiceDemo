@@ -1,4 +1,4 @@
-package com.bunli.tts
+package com.bunli.tts.services
 
 import android.app.Notification
 import android.app.NotificationChannel
@@ -13,6 +13,7 @@ import android.os.Build
 import android.os.IBinder
 import android.util.Log
 import androidx.core.app.NotificationCompat
+import com.bunli.tts.R
 
 class MixBoundService : Service() {
 
